@@ -2,4 +2,7 @@ numpy==1.26
 opencv-python
 onnx
 onnxruntime
+fastapi
+uvicorn
+python-multipart
 dlib-19.22.99-cp39-cp39-win_amd64.whl
