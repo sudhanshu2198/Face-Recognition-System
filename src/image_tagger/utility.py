@@ -5,15 +5,7 @@ from image_tagger import config
 
 def preprocess_img(img_pth):
     img=cv2.imread(img_pth)
-    img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
-    
-    """
-    if min(img.shape[:2])<800 and img.shape[0]<img.shape[1]:
-        img=cv2.resize(img,(800,800*(img.shape[1]/img.shape[0])))
-    elif min(img.shape[:2])<800 and img.shape[1]<img.shape[0]:
-        img=cv2.resize(img,(800*(img.shape[0]/img.shape[1]),800))
-    """
-        
+    img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB) 
     img=(np.transpose(img,(2,0,1)).astype(dtype=np.float32))
     img/=255.0
     
@@ -50,11 +42,11 @@ class FaceAligner():
         
         dlib_box=dlib.rectangle(left=x1, top=y1, right=x2, bottom=y2)
     
-        keypoint=self.predictor(image,dlib_box)
-        keypoint=self.shape_to_np(keypoint)
+        face_keypoint=self.predictor(image,dlib_box)
+        face_keypoint=self.shape_to_np(face_keypoint)
         
-        left_eye_center=(np.mean(keypoint[36:42,0]),np.mean(keypoint[36:42,1]))
-        right_eye_center=(np.mean(keypoint[42:48,0]),np.mean(keypoint[42:48,1]))
+        left_eye_center=(np.mean(face_keypoint[36:42,0]),np.mean(face_keypoint[36:42,1]))
+        right_eye_center=(np.mean(face_keypoint[42:48,0]),np.mean(face_keypoint[42:48,1]))
 
         dy=right_eye_center[1]-left_eye_center[1]
         dx=right_eye_center[0]-left_eye_center[0]
@@ -79,4 +71,4 @@ class FaceAligner():
         (w, h) = (self.desired_face_width, self.desired_face_height)
         aligned_img = cv2.warpAffine(image, Matrix, (w,h),flags=cv2.INTER_CUBIC)
         
-        return (aligned_img, Matrix)
+        return (aligned_img, Matrix, face_keypoint)

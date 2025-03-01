@@ -33,13 +33,15 @@ def face_alignment(img, boxes):
     aligner=FaceAligner(predictor)
     matrix=[]
     aligned=[]
+    facial_keypoints=[]
    
     for i,box in enumerate(boxes):
-        align_image,align_matrix=aligner.align(img,box)
+        align_image,align_matrix,face_keypoint=aligner.align(img,box)
         matrix.append(align_matrix)
         aligned.append(align_image)
+        facial_keypoints.append(face_keypoint)
         
-    return (aligned,matrix)
+    return (aligned,matrix,facial_keypoints)
     
 def face_embedding(img):
     img=(img/255.0-config.MEAN)/config.STD

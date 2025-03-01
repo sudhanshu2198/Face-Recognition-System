@@ -2,7 +2,7 @@ import sys
 import os
 from PIL import Image
 import numpy as np
-from fastapi import FastAPI, UploadFile
+from fastapi import FastAPI, UploadFile, File
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 from image_tagger.main import tagger
@@ -14,13 +14,14 @@ def display():
     return "Welcome to Image Tagger Api"
 
 @app.post("/predict")
-def predict(file: UploadFile):
+def predict(file: UploadFile=File(...)):
     img=Image.open(file.file)
     img=np.array(img)
     img=(np.transpose(img,(2,0,1)).astype(dtype=np.float32))
     img/=255.0
-    boxes, matrixs, results = tagger(img)
-
-    return {"prediction":results,
+    boxes, matrixs, keypoints, results = tagger(img)
+    
+    return {"predictions":results,
             "boxes":boxes.tolist(),
-            "matrix":[matrix.tolist() for matrix in matrixs]}
+            "matrixs":[matrix.tolist() for matrix in matrixs],
+            "keypoints":[keypoint.tolist() for keypoint in keypoints]}

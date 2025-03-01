@@ -6,10 +6,10 @@ from image_tagger.components import face_recognition
 
 def tagger(img):
 	boxes,labels,scores=face_detection(img)
-	aligned,matrixs=face_alignment(img, boxes)
+	aligned,matrixs,keypoints=face_alignment(img, boxes)
 	results=face_recognition(aligned)
 
-	return (boxes, matrixs, results)
+	return (boxes, matrixs, keypoints, results)
 
 if  __name__ == '__main__':
 	parser=argparse.ArgumentParser()
