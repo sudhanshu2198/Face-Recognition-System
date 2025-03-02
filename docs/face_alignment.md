@@ -1,4 +1,6 @@
 # Face Alignment 
+
+![Face Keypoint Detection](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Ftowards-data-science%2Ffacial-keypoints-detection-deep-learning-737547f73515&psig=AOvVaw0w08m8NkDnuMNCK7iAfKO7&ust=1740994474045000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLC1g_qL64sDFQAAAAAdAAAAABAE)
 Face alignment is a preprocessing step in face recognition and analysis that ensures faces are properly oriented by detecting key landmarks and adjusting the facial position accordingly. By aligning faces before processing, models can achieve more robust and consistent results in tasks like face recognition and analysis.
 
 ## Keypoint Detection
