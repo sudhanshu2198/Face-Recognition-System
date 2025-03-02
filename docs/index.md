@@ -1,5 +1,7 @@
 # Introduction
 
+![Face Recognition System](https://github.com/sudhanshu2198/Face-Recognition-System/blob/main/assests/images/face_recognition.png)
+
 This project focuses on developing a Face Recognition System for identifying Bollywood celebrities using deep learning techniques. The system can detect, recognize, and classify faces of popular Bollywood actors from images or videos. By leveraging Convolutional Neural Networks (CNNs) and Siamese Networks, the model learns unique facial features and accurately matches them against a pre-trained database of Bollywood stars.
 
 The project involves key steps such as **Face Detection → Landmark Detection → Face Alignment → Face Embedding Generation → Face Recognition** for accurate identification. Potential applications include celebrity identification in media, automated tagging in photos, and AI-powered fan engagement tools.
