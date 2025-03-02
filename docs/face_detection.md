@@ -2,7 +2,7 @@
 
 ## Faster R-CNN
 
-![Face Detection](https://github.com/sudhanshu2198/Face-Recognition-System/blob/main/assests/images/face_detection.png)
+<img src="https://raw.githubusercontent.com/sudhanshu2198/Face-Recognition-System/main/assests/images/face_detection.png">
 
 Faster R-CNN (Region-based Convolutional Neural Network) is a deep learning model designed for object detection, which identifies objects in an image and classifies them into categories.
 How It Works

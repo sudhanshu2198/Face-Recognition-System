@@ -1,7 +1,13 @@
 site_name: Face Recognition System
+repo_url: "https://github.com/sudhanshu2198/Face-Recognition-System"
 
 theme:
   name: "material"
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
 
 nav: 
   - index.md

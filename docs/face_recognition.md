@@ -1,7 +1,7 @@
 # Face Recognition
-A face recognition system follows a structured pipeline: 
+<img src="https://raw.githubusercontent.com/sudhanshu2198/Face-Recognition-System/main/assests/images/face_recognition.png">
 
-![Face Recognition](https://github.com/sudhanshu2198/Face-Recognition-System/blob/main/assests/images/face_recognition.png)
+A face recognition system follows a structured pipeline: 
 
 **Face Detection → Landmark Detection → Face Alignment → Face Embedding Generation → Face Recognition**
 

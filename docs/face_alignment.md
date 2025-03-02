@@ -1,6 +1,6 @@
 # Face Alignment 
 
-![Face Alignment](https://github.com/sudhanshu2198/Face-Recognition-System/blob/main/assests/images/face_alignment.png)
+<img src="https://raw.githubusercontent.com/sudhanshu2198/Face-Recognition-System/main/assests/images/face_alignment.png">
 
 Face alignment is a preprocessing step in face recognition and analysis that ensures faces are properly oriented by detecting key landmarks and adjusting the facial position accordingly. By aligning faces before processing, models can achieve more robust and consistent results in tasks like face recognition and analysis.
 
