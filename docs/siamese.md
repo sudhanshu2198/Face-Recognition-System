@@ -2,6 +2,8 @@
 
 ## Siamese Network
 
+![Face Embeddings](https://github.com/sudhanshu2198/Face-Recognition-System/blob/main/assests/images/face_embedding.png)
+
 - A Siamese Network is a type of neural network architecture that consists of two or more identical subnetworks, which share the same parameters, weights, and architecture. The purpose of this architecture is to learn a similarity function rather than a classification function.
 - Siamese networks take in two input samples and pass them through the twin networks, producing embeddings (feature representations). These embeddings are then compared using a distance metric (such as Euclidean distance or cosine similarity) to determine whether the two inputs are similar or dissimilar.
 - The model is trained with triplet loss, encouraging similar inputs to have closer embeddings and dissimilar inputs to have farther embeddings.
