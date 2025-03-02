@@ -7,7 +7,7 @@ from fastapi import FastAPI, UploadFile, File
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 from image_tagger.main import tagger
 
-app=FastAPI(title="Image Tagger")
+app=FastAPI(title="Face Recognition")
 
 @app.get("/")
 def display():

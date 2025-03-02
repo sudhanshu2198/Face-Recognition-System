@@ -1,25 +1,24 @@
-streamlit
-img object -> api
+docs build
+- index
+- face detection
+- face keypoint
+- face alignment
+- face embedding
+- face recognition
 
-fastapi
-detection -> boxes
-keypoint -> matrix
-embedding -> results
+streamlit introduction
+- face recognition
+- gif include
+- table linking to kaggle notebooks
 
-boxes -> non aligned
-matrix -> aligned
-embedding -> prediction
+assests choice
 
-streamlit display
+formatting
+linting
+testing
 
-streamlit frontend
-fastapi backend
+precommit
+ci/cd
+
 docker
-docker compose
-
-face tagger
-face detection
-face keypoint
-face embedding
-
-data transmit -> api -> json -> numpy not allowed
+docker-compose

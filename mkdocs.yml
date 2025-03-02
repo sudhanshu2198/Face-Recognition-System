@@ -1,1 +1,11 @@
-site_name: My Docs
+site_name: Face Recognition System
+
+theme:
+  name: "material"
+
+nav: 
+  - index.md
+  - face_recognition.md
+  - face_detection.md
+  - face_alignment.md
+  - siamese.md

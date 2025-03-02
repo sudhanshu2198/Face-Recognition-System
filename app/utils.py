@@ -25,7 +25,7 @@ def visualization(img,boxes,matrixs,keypoints,predictions):
 		matrix=np.array(matrixs[i])
 		keypoint=np.array(keypoints[i])
 		kp_array=list(zip(keypoint[:,0],keypoint[:,1]))
-		keypoint=[cv2.KeyPoint(x=float(x), y=float(y), size=2.5) for x, y in kp_array]
+		keypoint=[cv2.KeyPoint(x=float(x), y=float(y), size=2) for x, y in kp_array]
 
 		non_align_face=img[box[1]:box[3],box[0]:box[2]]
 		non_align_face=cv2.resize(non_align_face,(224,224))
@@ -33,7 +33,7 @@ def visualization(img,boxes,matrixs,keypoints,predictions):
 		align_face=cv2.warpAffine(img.copy(),matrix,(224,224),flags=cv2.INTER_CUBIC)
 
 		keypoints_image=cv2.drawKeypoints(img,keypoint,0, color=(0,0,255), flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
-		keypoints_image=keypoints_image[box[1]:box[3],box[0]:box[2]]
+		keypoints_image=keypoints_image[max(box[1]-15,0):min(box[3]+15,img.shape[0]),max(box[0]-15,0):min(box[2]+15,img.shape[1])]
 		keypoints_image=cv2.resize(keypoints_image,(224,224))
 
 		non_aligned_images.append(non_align_face)

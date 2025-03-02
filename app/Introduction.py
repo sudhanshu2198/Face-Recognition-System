@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
 from utils import visualization
 
-st.title("Image Tagger")
+st.title("Face Recognition")
 uploaded_file=st.file_uploader("Input Image File",type = ['jpg','png','jpeg','webp'])
 
 if uploaded_file:
