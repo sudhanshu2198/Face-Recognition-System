@@ -16,7 +16,7 @@ dependencies = ["dlib",
                 "numpy>=1.23",
                 "onnx==1.17.0",
                 "onnxruntime==1.19.2",
-                "opencv-python-headless>=4.5",
+                "opencv-python-headless>=4.8",
                 "pillow>=11.1.0",
                 ]
 
