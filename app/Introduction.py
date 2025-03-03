@@ -56,5 +56,5 @@ st.markdown(
 )
 st.markdown(
     "- **[FastAPI Backend Link](%s)**"
-    % "https://sudhanshu2198.github.io/Face-Recognition-System/"
+    % "https://srastog-face-recognition-system.hf.space/docs"
 )

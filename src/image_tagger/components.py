@@ -8,6 +8,7 @@ from image_tagger.utility import face_similarity
 
 
 def face_recognition(aligned):
+    print(config.FACE_EMBEDDING)
     with open(config.FACE_EMBEDDING, "r") as file:
         actor_embeddings = json.load(file)
 
