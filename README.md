@@ -9,7 +9,7 @@ The project involves key steps such as **Face Detection â†’ Landmark Detection â
 ## Project Links:
 1. [Streamlit Webapp](https://bollywood-celebrities-face-recognition-system.streamlit.app/)
 2. [FastAPI Backend](https://srastog-face-recognition-system.hf.space/docs)
-3. [Github Repo](https://github.com/sudhanshu2198/Face-Recognition-System)
+3. [Documentation](https://sudhanshu2198.github.io/Face-Recognition-System/)
 
 ## Resources
 
