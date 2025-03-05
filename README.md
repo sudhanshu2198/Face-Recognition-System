@@ -1,8 +1,6 @@
 # Introduction
 
-<video controls>
-<source src="https://raw.githubusercontent.com/sudhanshu2198/Face-Recognition-System/main/assests/videos/working_demo.mp4" type="video/mp4">
-</video>
+![](https://raw.githubusercontent.com/sudhanshu2198/Face-Recognition-System/main/assests/videos/working_demo.mp4)
 
 This project focuses on developing a Face Recognition System for identifying Bollywood celebrities using deep learning techniques. The system can detect, recognize, and classify faces of popular Bollywood actors from images or videos. By leveraging Convolutional Neural Networks (CNNs) and Siamese Networks, the model learns unique facial features and accurately matches them against a pre-trained database of Bollywood stars.
 
@@ -22,19 +20,19 @@ The project involves key steps such as **Face Detection â†’ Landmark Detection â
 
 
 ## Face Detection
-![]("https://raw.githubusercontent.com/sudhanshu2198/Face-Recognition-System/main/assests/images/face_detection.png")
+![](https://raw.githubusercontent.com/sudhanshu2198/Face-Recognition-System/main/assests/images/face_detection.png)
 - The first step in face recognition is detecting the face in an image or video.
 - It involves identifying the location of faces and drawing bounding boxes around them.
 - Faster RCNN Model is used for face detection.
 
 ## Face Alignment
-![]("https://raw.githubusercontent.com/sudhanshu2198/Face-Recognition-System/main/assests/images/face_alignment.png")
+![](https://raw.githubusercontent.com/sudhanshu2198/Face-Recognition-System/main/assests/images/face_alignment.png)
 - Once a face is detected, key landmarks on the face (e.g., eyes, nose, mouth, jawline) are identified.
 - These keypoints help in further processing such as alignment and feature extraction.
 - Face alignment uses the detected keypoints for aligning eyes along a horizontal axis
 
 ## Face Recognition
-![]("https://raw.githubusercontent.com/sudhanshu2198/Face-Recognition-System/main/assests/images/face_embedding.png")
+![](https://raw.githubusercontent.com/sudhanshu2198/Face-Recognition-System/main/assests/images/face_embedding.png)
 - After aligning the face, Siamese network extracts a feature vector that uniquely represents the face.
 - The generated embeddings are compared with stored embeddings in a database using similarity metrics like Euclidean Distance.
 - Based on the similarity score, the system verifies whether two images belong to the same person.""")
