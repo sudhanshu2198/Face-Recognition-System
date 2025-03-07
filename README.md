@@ -95,17 +95,16 @@ Create Virtaul Environment and install dependencies
 
 Run FastAPI Backend
 ```bash
-
-  uvicorn api.main:app --host 0.0.0.0 --port 80 --reload
-  
-
-  ```
+    uvicorn api.main:app --host 0.0.0.0 --port 80 --reload
+```
 Run Streamlit App
 ```bash
-
   streamlit run Introduction.py
-  
+```
 
-  ```
+## Future Developments
+- Containizing the entire application.
+- Adding CI/CD for automated linting, formatting and testing.
+- Adding Testing using pytest.
 
 
